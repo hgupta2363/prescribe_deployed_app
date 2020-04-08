@@ -1,0 +1,20 @@
+.diff-zoom-grid{
+background-color: white;
+height: 320px;
+}
+.zoom-para{
+    font-family: 'Montserrat', sans-serif !important;
+    
+}
+.loading-sign{
+ height:100px;
+ width: 100px;
+ transform: translateY(-1px);
+}
+.heading-text{
+    background-color: red;
+    color: white;
+    font-family: 'Montserrat', sans-serif !important;
+   padding: 10px;
+
+}

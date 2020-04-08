@@ -1,0 +1,80 @@
+body {
+    background-color: #ECEFF1;
+    font-family: Helvetica;
+}
+.receipt {
+    width: 400px;
+    background-color: transparent;
+    margin: 80px auto 80px auto;
+}
+.payment-card{
+    height: 500px !important;
+    margin-top: 100px !important;
+    background-image: url('../img/dribbble_17.jpg');
+    background-size: cover;
+    background-position: 550px 400px;
+    opacity: 1.0;
+}
+.payment-grid{
+    transform: translateY(200px);
+    color:white;
+}
+.payment-dets{
+    margin-top: 3px;
+    background-color: red;
+    padding: 20px;
+    opacity: 1.0;
+}
+.table-receipt {
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: -20px 30px 50px 0px #8d8d8d;
+    background-color: white;
+    font-size: 24px;
+}
+.th-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #825fa5;
+    color: white;
+    padding: 24px;
+    font-size: 24px;
+}
+.td-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #78909c;
+    padding: 12px 8px 12px 8px;
+    border-bottom: 1px solid #CFD8DC;
+}
+.td-content {
+    font-size: 18px;
+    text-align: right;
+    padding: 12px 8px 12px 8px;
+    border-bottom: 1px solid #CFD8DC;
+}
+.td-bottom {
+    width: 100%;
+    font-weight: 600;
+    color: #3a7890;
+    text-align: center;
+    padding: 24px;
+    font-size: 28px;
+}
+.button
+{
+    background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}

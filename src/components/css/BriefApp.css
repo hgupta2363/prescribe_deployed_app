@@ -1,0 +1,132 @@
+.col-lg-8
+{   
+    background-color:white !important;
+    margin-top: 22%;
+
+    color: black !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    background-color:  #f2f2f2;
+    -webkit-box-shadow: 0px 4px 5px -1px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 4px 5px -1px rgba(184,184,184,1);
+    box-shadow: 0px 4px 5px -1px rgba(184,184,184,1);
+ 
+    height: 310px;
+   border:1px red !important;
+    transition: 0.5s ease;
+}
+
+.col-lg-8:hover{
+    
+    transform: scale(1.08);
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+justify-content: center !important;
+    text-align: center;
+    margin-top: 150px;
+
+ 
+    /* -webkit-box-shadow: 0px 4px 5px -1px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 4px 5px -1px rgba(184,184,184,1);
+    box-shadow: 0px 4px 5px -1px rgba(184,184,184,1); */
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    
+}
+.welcome-home{
+    transform: translateY(40px);
+    background-color: #c44343;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+
+}
+.rating-hos{
+    font-size: 20px;
+}
+.star-icon{
+    margin-right: 10px;
+    color: yellow;
+    
+}
+.icon{
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+
+}
+.hosp-logo{
+    height:120px;
+    width:120px;
+    transform: translateY(20px);
+    position: relative;
+    
+}
+
+.arrow{
+    color: white;
+    /* font-size: 20px; */
+
+    transform: translateY(10px);
+    background-color: #60dfeb;
+   border-radius: 50%;
+
+
+    
+}
+.button-frontPage{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.btn{
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.flowArrow{
+    text-align: center;
+}
+body{
+    overflow: hidden !important;
+    overflow-y: scroll !important;
+}
+.HospName{
+    background-color:#e8e8e8;
+    height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    transform: translateY(-25px);
+    position:  relative !important;
+}
+.HospDets{
+    transform: translateY(-55px);
+    background-color: #c44343;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}
+.col-lg-2{
+    background-color: white;
+}
+.HospLoc{
+    font-size: 15px;
+    transform: translateY(35px);
+}
+.submitButton{
+    text-align: center !important;
+    padding: 5px;
+}
