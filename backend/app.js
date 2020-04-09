@@ -324,7 +324,7 @@ app.post('/GetDets/:pid/:child',(req,res,next)=>{
         var Month=(today.getMonth()+1)
      
         if(today.getDate()<=9)
-        var todayDate='0'+(today.getDate()+1);
+        var todayDate='0'+(today.getDate());
         else
         var todayDate=today.getDate();
     
@@ -380,7 +380,7 @@ app.get('/getData',(req,res,next)=>{
     var Month=(today.getMonth()+1)
  
     if(today.getDate()<=9)
-    var todayDate='0'+(today.getDate()+1);
+    var todayDate='0'+(today.getDate());
     else
     var todayDate=today.getDate();
 
