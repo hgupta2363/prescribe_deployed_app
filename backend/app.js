@@ -115,74 +115,74 @@ app.get('/jwt',(req,res,next)=>{
         },
         body: 
             {
-                topic: "Hospital Appointment",
-                type: 2,
-                start_time: "2020-04-05T20:59:17",
-                duration: 2,
-                timezone: "2020-04-05T20:59:17",
-                password: "123456",
-                agenda: "HELP",
-                recurrence: {
-                  type: 1,
-                  repeat_interval: 2,
-                  weekly_days: "MOnday",
-                  monthly_day: 23,
-                  monthly_week: 3,
-                  monthly_week_day: 10,
-                  end_times: 5,
-                  end_date_time: "2020-04-05T20:59:17"
-                },
-                settings: {
-                  host_video: false,
-                  participant_video: true,
-                  cn_meeting: true,
-                  in_meeting: true,
-                  join_before_host: true,
-                  mute_upon_entry: true,
-                  watermark: true,
-                  use_pmi: true,
-                  approval_type: 0,
-                  registration_type: 0,
-                waiting_room:false,
-                  meeting_authentication:false,
-                  audio: "",
-                  auto_recording: "",
-                  enforce_login: true,
-                  enforce_login_domains: "",
-                  alternative_hosts: "",
-                  global_dial_in_countries: [
-                    ""
-                  ],
-                  registrants_email_notification: true
-                }
-              
-        //   topic: 'demo',
-        //   type: 2,
-        //   start_time: '',
-        //   duration: 6,
-        //   timezone: ' ',
-        //   password: 'heyman',
-        //   agenda: 'hithere',
-        //   settings: {
-        //       host_video: false,
-        //       participant_video: false,
-            
-        //       in_meeting: true,
-        //       join_before_host: true,
-        //       // "mute_upon_entry": "boolean",
-        //       // "watermark": "boolean",
-        //       use_pmi: false,
-        //       approval_type: 0,
-        //       registration_type: 2,
-        //       // "audio": "string",
-        //       // "auto_recording": "string",
-        //       enforce_login: false,
-        //       enforce_login_domains: "contactprescribe@gmail.com Prescribe@123",
-        //       meeting_authentication:false,
-              
-        //       registrants_email_notification: false
-        //     }
-          },
+            topic: "appoint",
+            type: 2,
+            start_time: "2020-10-05T20:19:17",
+            duration: 2,
+            timezone: "2020-04-05T20:59:17",
+            password: "123456",
+            agenda: "HELP",
+            recurrence: {
+              type: 1,
+              repeat_interval: 2,
+              weekly_days: "Tuesday",
+              monthly_day: 23,
+              monthly_week: 3,
+              monthly_week_day: 10,
+              end_times: 5,
+              end_date_time: "2020-04-05T20:59:17"
+            },
+            settings: {
+              host_video: false,
+              participant_video: true,
+              cn_meeting: false,
+              in_meeting: true,
+              join_before_host: true,
+              mute_upon_entry: true,
+              watermark: true,
+              use_pmi: false,
+              approval_type: 0,
+              registration_type: 0,
+            waiting_room:false,
+              meeting_authentication:false,
+              audio: "",
+              auto_recording: "",
+              enforce_login: false,
+              enforce_login_domains: "",
+              alternative_hosts: "",
+              global_dial_in_countries: [
+                ""
+              ],
+              registrants_email_notification: true
+            }
+          
+    //   topic: 'demo',
+    //   type: 2,
+    //   start_time: '',
+    //   duration: 6,
+    //   timezone: ' ',
+    //   password: 'heyman',
+    //   agenda: 'hithere',
+    //   settings: {
+    //       host_video: false,
+    //       participant_video: false,
+        
+    //       in_meeting: true,
+    //       join_before_host: true,
+    //       // "mute_upon_entry": "boolean",
+    //       // "watermark": "boolean",
+    //       use_pmi: false,
+    //       approval_type: 0,
+    //       registration_type: 2,
+    //       // "audio": "string",
+    //       // "auto_recording": "string",
+    //       enforce_login: false,
+    //       enforce_login_domains: "contactprescribe@gmail.com Prescribe@123",
+    //       meeting_authentication:false,
+          
+    //       registrants_email_notification: false
+    //     }
+      },
         json: true
           };
             var finalData;
