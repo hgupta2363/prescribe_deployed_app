@@ -403,7 +403,7 @@ app.get('/getData',(req,res,next)=>{
 
     var date =todayDate+'-'+Month+'-'+today.getFullYear();
     console.log(date)
-    const usersRef=database.ref(`schedule/${date}`);
+    const usersRef=database.ref(`schedule/NIZAR/${date}`);
     usersRef.once('value')
     .then(function(snapshot){
            snapshot.forEach(function(childSnapshot){
