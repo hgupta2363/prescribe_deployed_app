@@ -42,7 +42,7 @@ export default class Zoomcall extends Component{
         var child;
         const zoom={
             link:localStorage.getItem('url')}
-        axios.post(`https://finalbackendprscribe.herokuapp.com/GetDets/${id[2]}/${child}`,zoom).then(res=>{
+         axios.post(`http://localhost:5000/GetDets/${id[2]}/${child}`,zoom).then(res=>{
           if(res.data.object)
           {
             this.setState({
@@ -75,8 +75,32 @@ export default class Zoomcall extends Component{
             console.log(this.state.SlotArray)
             console.log(res.data.object)
           }
+          const requestOptions = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                phone: res.data.object.phone,
+                name: res.data.object.name,
+                hospital: res.data.object.HospitalName,
+                doctor: res.data.object.docName,
+                time:"9:00 - 12:00" ,
+                zoom_link: res.data.link,
+                type: "CONFIRMATION" //don't change this
+            }),
+          };
+          console.log(requestOptions.body)
+          fetch("https://prescribe-webapp.herokuapp.com", requestOptions)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data)
+              
+
+            }).catch(err=>{
+                console.log(err)
+            })
          
         })
+        
     }
     handleClick()
     {
